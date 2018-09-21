@@ -9,9 +9,9 @@ var enemies = [];
 var playerSpawnPoints = [];
 var clients = [];
 
-/* app.get('/', function(req, res) {
-	res.send('hey you got back get "/"');
-}); */
+app.get('/', function(req, res) {
+	res.send('Server is running');
+});
 
 var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
